@@ -1,0 +1,17 @@
+
+<div class="browser-categories">
+    <div class="header-container">
+      <div class="header">
+        Browser By Categories
+        <span class="sub-title"
+          >Select the topics below to view corresponding courses.</span
+        >
+      </div>
+      <img class="art-icon" src="assets/images/art.png" alt="" />
+    </div>
+    <div class="courses">
+      <ng-container *ngFor="let course of courses">
+        <div class="course-name">{{course}}</div>
+      </ng-container>
+    </div>
+  </div>

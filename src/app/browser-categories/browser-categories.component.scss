@@ -1,0 +1,45 @@
+.browser-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 80px;
+  padding-bottom: 50px;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      margin-top: 50px;
+      font-size: 28px;
+      font-weight: 700;
+
+      .sub-title {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+
+    .art-icon {
+      position: relative;
+      top: -30px;
+    }
+  }
+
+  .courses {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+
+    .course-name {
+      border: 2px solid;
+      padding: 20px;
+      border-radius: 10px;
+      background: #ffffff;
+      text-align: center;
+    }
+  }
+}

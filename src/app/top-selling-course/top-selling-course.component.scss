@@ -1,0 +1,142 @@
+:host {
+  position: relative;
+  top: -34px;
+}
+.selling-courses-container {
+  background-image: linear-gradient(to bottom, #094c3d, #116955);
+  margin: 0px 20px;
+  padding: 30px;
+  border-radius: 30px;
+  height: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .asset-certificate {
+    position: absolute;
+    right: 100px;
+    top: -19px;
+  }
+
+  .selling-courser-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    top: 10px;
+
+    .selling-courses-title {
+      margin: 0;
+    }
+
+    .view-all {
+      color: yellow;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .selling-courses-list {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 35% 55%;
+    gap: 20px;
+
+    .list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      li {
+        color: white;
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 10px;
+
+        &.active {
+          background-color: #a3e47b3d;
+        }
+      }
+    }
+
+    .selected-courses-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: white;
+
+      .rating {
+        display: flex;
+        gap: 10px;
+      }
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: 600;
+
+      small {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    .actions {
+      display: flex;
+      gap: 20px;
+      .view-details {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: yellow;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .quiz-banner-bar {
+    background-color: #ecf8df;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    border-radius: 5px;
+
+    .logo {
+      height: 75px;
+      width: 150px;
+      border-radius: 120px 120px 0px 0px;
+      background-color: #a3e659;
+      top: 13px;
+      position: relative;
+      right: -30px;
+
+      img {
+        position: relative;
+        top: -80px;
+        right: -30px;
+      }
+    }
+
+    .text {
+      font-size: 24px;
+      font-weight: 600;
+      width: 380px;
+    }
+
+    .btn-quiz {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 20px;
+      background-color: #f4b955;
+      border: none;
+    }
+  }
+}

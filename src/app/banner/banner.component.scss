@@ -1,0 +1,62 @@
+.banner-container {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 80px;
+  grid-template-columns: auto auto;
+
+  .banner-text {
+    font-size: 56px;
+    width: 420px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0;
+  }
+
+  .feature-list {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 10px;
+
+      li {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .group-image {
+    float: right;
+    position: absolute;
+    right: 50px;
+    height: 400px;
+    align-self: end;
+    display: flex;
+    border-radius: 900px 900px 0 0;
+    background-color: #BBBBBB;
+    z-index: -3;
+    img.girl-image {
+      position: relative;
+      left: 70px;
+      z-index: -1;
+    }
+  }
+
+  .briefcase-icon {
+    margin-left: auto;
+    position: relative;
+    left: 50%;
+    top: -60px;
+  }
+}

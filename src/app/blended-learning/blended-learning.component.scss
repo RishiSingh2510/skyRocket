@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 80px;
+    margin: 0;
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+  
+      .arrows {
+        display: flex;
+        gap: 5px;
+
+        .courses {
+            display: flex;
+            align-items: center;
+            color: #4285F4;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+  
+        span {
+          padding: 5px;
+          border: 1px solid;
+          border-radius: 2px;
+        }
+      }
+    }
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+  
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 0px;
+        padding: 5px;
+        gap: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        .blended-card-img {
+            width: 100%;
+        }
+  
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          padding: 0px 5px;
+        }
+      }
+  
+      .card-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .card-description {
+        font-size: 1em;
+        margin-bottom: 10px;
+      }
+  
+      .card-price {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .card-teacher {
+        font-size: 0.9em;
+        color: #888;
+      }
+  
+      .button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      .button:hover {
+        background-color: #3e8e41;
+      }
+    }
+  
+    .scroll-icon {
+      display: flex;
+      align-self: center;
+      margin-top: 10px;
+    }
+}

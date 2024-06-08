@@ -1,0 +1,88 @@
+<div class="testimonials">
+  <div class="testimonials-header">
+    <h2>Testimonials</h2>
+    <div class="ratings">
+      <img src="assets/svg/4.5-star.svg" alt="" />
+    </div>
+    <p>{{ rating }} by {{ totalReviews }} users</p>
+    <div class="arrows">
+      <span>
+        <svg
+          width="22"
+          height="12"
+          viewBox="0 0 22 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.35 5.99999L1.65002 5.99999M1.65002 5.99999L6.32502 10.6042M1.65002 5.99999L6.32503 1.39582"
+            stroke="#1D1D1D"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </span>
+      <span>
+        <svg
+          width="22"
+          height="12"
+          viewBox="0 0 22 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.64997 5.99999H20.35M20.35 5.99999L15.675 1.39583M20.35 5.99999L15.675 10.6042"
+            stroke="#1D1D1D"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+  <svg
+    width="3"
+    height="262"
+    viewBox="0 0 3 262"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      opacity="0.2"
+      d="M1.5 0V261.5"
+      stroke="url(#paint0_linear_1_440)"
+      stroke-width="2"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_1_440"
+        x1="1.80025"
+        y1="230.25"
+        x2="2.83293"
+        y2="230.248"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="#094C3D" />
+        <stop offset="1" stop-color="#116955" />
+      </linearGradient>
+    </defs>
+  </svg>
+  <div class="testimonial" *ngFor="let testimonial of testimonials">
+    <div class="quote-icon">
+      <span>“</span>
+    </div>
+    <p>{{ testimonial.quote }}</p>
+    <div class="testimonial-author">
+      <div class="author-image">
+        <img [src]="testimonial.authorImage" alt="Author Image" />
+      </div>
+      <div class="author-info">
+        <p>{{ testimonial.authorName }}</p>
+        <span>{{ testimonial.authorTitle }}</span>
+      </div>
+    </div>
+  </div>
+  <img class="pencil" src="assets/images/pencil-img.png" alt="" srcset="" />
+</div>
